@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        System.out.println("Task 1");
+        System.out.println(" Task 1");
 
         int clientOS = 0;
 
@@ -14,7 +14,7 @@ public class Main {
             System.out.println(" Установите версию приложения для iOS по ссылке ");
         }
 
-        System.out.println("Task 2");
+        System.out.println(" Task 2");
 
         int year = 2015;
         int clientDeviceYear = 2014;
@@ -31,32 +31,32 @@ public class Main {
         }
 
 
-        System.out.println("Task 3");
+        System.out.println(" Task 3");
 
-        int year1 = 10000;
+        int year1 = 1888;
 
         if (year1 < 1584) {
             System.out.println(" Високосный год еще не придумали(");
         } else if (year1 % 4 == 0 && year1 % 100 != 0 || year1 % 400 == 0) {
-            System.out.println(" +year1+. год является високосным ");
+            System.out.println( year1 + ". год является високосным ");
         } else {
-            System.out.println(" +year1+. год не является високосным  ");
+            System.out.println( year1 + ". год не является високосным ");
         }
 
 
         System.out.println(" Task 4 ");
 
-        int deliveryDistance = 106;
+        int deliveryDistance = 99;
         int deliveryDays = 1;
 
         if (deliveryDistance <= 20) {
-            System.out.println("Потребуется дней: " + deliveryDays);
+            System.out.println(" Потребуется дней: " + deliveryDays);
         } else if (deliveryDistance <= 60) {
-            deliveryDays++;
-            System.out.println("Потребуется дней: " + deliveryDays);
+            deliveryDays ++;
+            System.out.println(" Потребуется дней: " + deliveryDays);
         } else if (deliveryDistance <= 100) {
             deliveryDays += 2;
-            System.out.println("Потребуется дней: " + deliveryDays);
+            System.out.println(" Потребуется дней: " + deliveryDays);
         } else {
             System.out.println(" Доставки нет");
         }
@@ -64,8 +64,10 @@ public class Main {
 
         System.out.println(" Task 5 ");
 
-        int monthNumber = 13;
-        switch (monthNumber) {
+        int monthNumber = 10;
+        if (monthNumber > 12) {
+            System.out.println("Неверное значение");
+        } else switch (monthNumber) {
             case 12:
             case 1:
             case 2:
@@ -86,9 +88,6 @@ public class Main {
             case 11:
                 System.out.println(" Осень ");
             default:
-                System.out.println(" Неверное значение ");
-
-
         }
     }
 
