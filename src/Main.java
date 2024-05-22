@@ -66,7 +66,7 @@ public class Main {
 
         int monthNumber = 10;
         if (monthNumber > 12) {
-            System.out.println("Неверное значение");
+            System.out.println(" Неверное значение ");
         } else switch (monthNumber) {
             case 12:
             case 1:
